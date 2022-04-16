@@ -1,0 +1,13 @@
+["device_fingerprint"]
+default = "Device Fingerprint"
+zh-CN = "设备指纹"
+
+["bluetooth"]
+default = "Bluetooth"
+zh-CN = "蓝牙"
+
+["Bluetooth MAC Address"]
+zh-CN = "蓝牙 MAC 地址"
+
+["Bluetooth Device Name"]
+zh-CN = "蓝牙设备名称"

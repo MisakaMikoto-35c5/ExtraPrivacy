@@ -1,0 +1,38 @@
+hooks:
+  -
+    category: device_fingerprint
+    className: com.android.server.BluetoothManagerService
+    methods:
+      -
+        name: getAddress
+        defaultValue: 02:00:00:00:00:00
+        permission: BLUETOOTH
+        usermod: true
+        comment: Bluetooth MAC Address
+      -
+        name: getName
+        defaultValue: QCOM-BTD
+        permission: BLUETOOTH
+        usermod: true
+        comment: Bluetooth Device Name
+  -
+    category: bluetooth
+    className: com.android.server.BluetoothManagerService
+    methods:
+      -
+        name: enable
+        defaultValue: false
+        permission: BLUETOOTH
+        valueType: boolean
+        run_on: before
+      -
+        name: enableBle
+        defaultValue: false
+        permission: BLUETOOTH
+        valueType: boolean
+        run_on: before
+      -
+        name: getState
+        defaultValue: 0
+        permission: BLUETOOTH
+        valueType: int
